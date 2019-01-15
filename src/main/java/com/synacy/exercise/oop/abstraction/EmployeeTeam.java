@@ -7,6 +7,13 @@ public class EmployeeTeam {
 
 	String name;
 	Employee leader;
-	List<Employee> teamMembers = new ArrayList();
+	private List teamMembers = new ArrayList();
 
+	public void addMember(Employee employee){
+		teamMembers.add(employee);
+	}
+
+	public List getTeamMembers() {
+		return teamMembers;
+	}
 }
