@@ -13,11 +13,6 @@ public class Main {
 		employeeTeam.addMember(len);
 		employeeTeam.addMember(steven);
 		employeeTeam.addMember(kenichi);
-		printTeamMemberFullNames(employeeTeam);
-	}
-
-	private static void printTeamMemberFullNames(EmployeeTeam employeeTeam) {
-		for( Employee teamMember : employeeTeam.getTeamMembers() )
-			System.out.println(teamMember.getLastName() +" " +teamMember.getFirstName());
+		employeeTeam.printNameOfMembers();
 	}
 }

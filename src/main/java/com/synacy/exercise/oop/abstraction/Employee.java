@@ -16,4 +16,8 @@ public class Employee {
 	public String getLastName() {
 		return lastName;
 	}
+
+	public void printFullName() {
+		System.out.println(firstName + " " + lastName);
+	}
 }

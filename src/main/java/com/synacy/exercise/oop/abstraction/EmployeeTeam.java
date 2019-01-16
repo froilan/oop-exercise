@@ -12,8 +12,9 @@ public class EmployeeTeam {
 		teamMembers.add(employee);
 	}
 
-	public List <Employee> getTeamMembers(){
-		return teamMembers.getTeamMembers();
+	public void printNameOfMembers() {
+		for(Employee teamMember: teamMembers.getTeamMembers())
+			teamMember.printFullName();
 	}
 
 	private class EmployeeList {
