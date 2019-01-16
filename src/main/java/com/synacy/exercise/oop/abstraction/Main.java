@@ -2,7 +2,7 @@ package com.synacy.exercise.oop.abstraction;
 
 public class Main {
 
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		Employee francis = new Employee("Francis", "Molina");
 		Employee len = new Employee("Len", "Random");
 		Employee steven = new Employee("Steven", "Random2");
@@ -17,9 +17,7 @@ public class Main {
 	}
 
 	private static void printTeamMemberFullNames(EmployeeTeam employeeTeam) {
-		employeeTeam.getTeamMembers().forEach(teamMember -> {
-			System.out.println(teamMember.getLastName() + teamMember.getFirstName());
-		});
+		for( Employee teamMember : employeeTeam.getTeamMembers() )
+			System.out.println(teamMember.getLastName() +" " +teamMember.getFirstName());
 	}
-
 }

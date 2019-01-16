@@ -1,7 +1,6 @@
 package com.synacy.exercise.oop.abstraction;
 
 public class Employee {
-
 	private String firstName;
 	private String lastName;
 
