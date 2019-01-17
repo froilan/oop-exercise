@@ -14,7 +14,7 @@ public class EmployeeTeam {
 
 	public void printNameOfMembers() {
 		for(Employee teamMember: teamMembers.getTeamMembers())
-			teamMember.printFullName();
+			System.out.println(teamMember.getFirstName() +" " +teamMember.getLastName());
 	}
 
 	private class EmployeeList {
